@@ -20,7 +20,7 @@ public class Business implements Discountable{
     public String toString() {
         return "Business{" +
                 "address='" + address + '\'' +
-                ", product=" + product +
+                "," + product +
                 ", Discount=" + Discount +
                 '}';
     }

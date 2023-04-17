@@ -7,15 +7,13 @@ public abstract class Employee extends Customer {
         super(name, product, size);
 
 
-
     }
 
+    @Override
+    public double calculateDiscount(Product product) {
+        return Employee_Discount * product.getPrice();
+    }
 
-   public void printEmployeePriceAfterDiscount(Product product){
-       if(Employee_Discount <= 0){
-           System.out.println(Employee_Discount * product.getPrice());
-       }
-   }
+    public abstract void printEmployeePriceAfterDiscount(Product product);
 
 }
-

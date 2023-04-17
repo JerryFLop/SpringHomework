@@ -12,7 +12,6 @@ public abstract class Customer extends Person implements Discountable{
          this.size = size;
     }
 
-
     @Override
     public String toString() {
         return "Customer{" + "Name:"+ getName() +

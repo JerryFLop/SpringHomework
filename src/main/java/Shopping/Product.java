@@ -36,4 +36,12 @@ public class Product {
         this.size = size;
     }
 
+    @Override
+    public String toString() {
+        return "Product{" +
+                "description='" + description + '\'' +
+                ", price=" + price +
+                ", size=" + size +
+                '}';
+    }
 }

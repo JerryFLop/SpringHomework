@@ -1,5 +1,5 @@
 package Shopping;
 
 public interface Discountable {
-    public double calculateDiscount(Product product);
+    public abstract double calculateDiscount(Product product);
 }
