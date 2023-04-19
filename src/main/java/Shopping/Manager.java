@@ -4,31 +4,32 @@ import java.util.Arrays;
 
 public class Manager extends Employee{
     private final double Manager_Discount = 0.5;
-
+    double calculate = Employee_Discount + Manager_Discount;
     public Manager(String name, Product[] product, Size size) {
         super(name, product, size);
     }
 
-    @Override
-    public void printEmployeePriceAfterDiscount(Product product) {
-        if( Manager_Discount <= 0){
-            System.out.println(product.getPrice());
-        }
-    }
+
 
 
 
     @Override
     public double calculateDiscount(Product product) {
-        return (super.Employee_Discount + Manager_Discount) * product.getPrice();
+
+        return  calculate;
 
     }
 
     @Override
+    public void printEmployeePriceAfterDiscount(Product product) {
+        System.out.println( "total price =" + (calculate * product.getPrice()));
+    }
+
+
+    @Override
     public String toString() {
-        return "Manager{ name= "+  getName() +
-                "product=" +
-                ", size=" +
+        return "Manager{ name= "+ getName() +
+                " product= " +  Arrays.toString(getProduct()) + "discount =" + Employee_Discount + Manager_Discount +
                 '}';
     }
 }

@@ -12,6 +12,22 @@ public abstract class Customer extends Person implements Discountable{
          this.size = size;
     }
 
+    public Product[] getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product[] product) {
+        this.product = product;
+    }
+
+    public Size getSize() {
+        return size;
+    }
+
+    public void setSize(Size size) {
+        this.size = size;
+    }
+
     @Override
     public String toString() {
         return "Customer{" + "Name:"+ getName() +

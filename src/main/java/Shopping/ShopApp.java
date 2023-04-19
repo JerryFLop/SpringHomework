@@ -5,25 +5,41 @@ public class ShopApp {
 
 
     public static void printPersonName(Person person){
-        System.out.println(person);
+        if(person instanceof Manager){
+            System.out.println(person.getName());
+        } else if (person instanceof Student) {
+            System.out.println(person.getName());
+        } else {
+            System.out.println(person.getName());
+        }
+
+
+
     }
     public static double calculateTotal(Product[] product) {
-        for (Product p : product) {
-            p.getPrice();
+        double total = 0.0;
+        for (Product p: product) {
+            total = total + p.getPrice();
         }
-        return product.length;    }
-//
-//public static boolean isAFit(Customer product) {
-//    if () {
-//    }
-//    }
-//
-//
-//    public static void printEveryDiscountAvailableForAProduct(Discountable[] Product){
-//        for (Discountable p : Product) {
-//            p.
-//        }
-//    }
+     return total;
+    }
+
+public static boolean isAFit(Customer customer,Product product) {
+        if(customer.getSize().equals(product)){
+         return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    public static void printEveryDiscountAvailableForAProduct(Discountable[] discountables, Product products){
+for (Discountable disc: discountables ){
+    System.out.println(Math.round(disc.calculateDiscount(products)));
+}
+
+
+    }
 
 }
 
