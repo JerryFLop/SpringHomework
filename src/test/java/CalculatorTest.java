@@ -59,22 +59,29 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         int val1 = 20;
         int val2 = val1;
-        int expected =  val1 * val2 ;
+        int expected = val1 * val2;
         int actual = calculator.square(val1, val2);
+
        Assert.assertEquals(expected,actual);
 
 
     }
-    @Test
-    public void SqurootTest() {
-        Calculator calculator = new Calculator();
-        int val1 = 20;
-        double expected = Math.sqrt(val1);
-        int actual = calculator.squareRoot(val1);
-        Assert.assertEquals(expected, actual);
+
+        @Test
+        public void squrootTest() {
+            Calculator calculator = new Calculator();
+            double val1 = 10;
+            double val2 = Math.sqrt(val1);
+            double expected =  val2;
+            double actual = calculator.squareRoot(val1,val2);
+            double delta = 0;
+            Assert.assertEquals(expected,actual,delta);
 
 
     }
+
+
+
 
 
 

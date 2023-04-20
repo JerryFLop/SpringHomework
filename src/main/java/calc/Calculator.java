@@ -26,10 +26,23 @@ public class Calculator {
     }
 
 
-    public  int squareRoot(int value1){
+    public double squareRoot(double value1, double value2){
 
-        return 0;
+        if(0 <= value2){
+            return value2 ;
+        } else {
+            return value1;
+        }
+
+
     }
+
+//    public  expont(double value1, double value2){
+//        return 0;
+//    }
+
+
+
     //subtract
 
     //multiply
