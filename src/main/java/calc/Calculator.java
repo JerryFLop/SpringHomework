@@ -28,7 +28,6 @@ public class Calculator {
 
     public  int squareRoot(int value1){
 
-
         return 0;
     }
     //subtract
