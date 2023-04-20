@@ -24,7 +24,7 @@ public class Main {
         discountablesProducts[0]= student;
         discountablesProducts[1]= manager;
         discountablesProducts[2]= business;
-        ShopApp.printEveryDiscountAvailableForAProduct(discountablesProducts,pants);
+        ShopApp.printEveryDiscountAvailableForAProduct(discountablesProducts,shirt);
     }
 
 

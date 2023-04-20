@@ -40,8 +40,10 @@ public class ShopApp {
 
     public static void printEveryDiscountAvailableForAProduct(Discountable[] discountables, Product products){
 for (Discountable disc: discountables ){
-//    String.format("%d", products );
-    System.out.println( );
+
+
+
+    System.out.printf("% ,.2f",disc.calculateDiscount(products));
 }
 
 
