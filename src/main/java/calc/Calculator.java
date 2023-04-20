@@ -21,8 +21,8 @@ public class Calculator {
     public int divide(int value1, int value2){
         return value1 / value2;
     }
-    public int square(int value1, int value2){
-        return value1 * value2;
+    public double square(int value1, int value2){
+        return Math.pow(value1,value2);
     }
 
 

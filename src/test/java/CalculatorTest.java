@@ -58,13 +58,11 @@ public class CalculatorTest {
     public void squareTest() {
         Calculator calculator = new Calculator();
         int val1 = 20;
-        int val2 = val1;
-        int expected = val1 * val2;
-        int actual = calculator.square(val1, val2);
-
-       Assert.assertEquals(expected,actual);
-
-
+        int val2 = 2;
+        double expected = Math.pow(val1,val2);
+        double actual = calculator.square(val1, val2);
+        int delta = 0;
+        Assert.assertEquals(expected, actual,delta);
     }
 
         @Test
