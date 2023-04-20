@@ -18,7 +18,7 @@ public class Main {
         ShopApp.printPersonName(manager);
         ShopApp.printPersonName(student);
         System.out.println(business);
-        System.out.println(ShopApp.isAFit(student,shirt));
+        System.out.println(ShopApp.isAFit(student, shirt));
         System.out.println(ShopApp.calculateTotal(listofproducts));
         Discountable[] discountablesProducts = new Discountable[3];
         discountablesProducts[0]= student;

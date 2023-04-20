@@ -30,7 +30,7 @@ public abstract class Customer extends Person implements Discountable{
 
     @Override
     public String toString() {
-        return "Customer{" + "Name:"+ getName() +
+        return "Customer{" +
                 "product=" + Arrays.toString(product) +
                 ", size=" + size +
                 '}';

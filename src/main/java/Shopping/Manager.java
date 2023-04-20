@@ -22,7 +22,7 @@ public class Manager extends Employee{
 
     @Override
     public void printEmployeePriceAfterDiscount(Product product) {
-        System.out.println( "total price =" + (calculate * product.getPrice()));
+        System.out.println(product.getPrice() - calculateDiscount(product));
     }
 
 
